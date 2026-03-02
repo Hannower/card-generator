@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f7ff;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    font-weight: bolder;
+    color: #104e8b;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.formulario {
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 50rem;
+}
+
+.titulo {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.titulo h3 {
+    color: #104e8b;
+}
+
+.titulo p {
+    color: #808080;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    gap: 5rem;
+    width: auto;
+}
+
+.nome-cargo {
+    gap: 1rem;
+}
+
+.nome-cargo input {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border-color: #00000043;
+}
+
+.nome-cargo {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 2rem;
+}
+
+.nome-cargo form {
+    gap: 2rem;
+}
+
+.form-nome{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cargo{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.botao button {
+    width: 12rem;
+    padding: 0.7rem;
+    background-color: #104e8b;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 1.5rem;
+}
+
+.botao button:hover {
+    background-color: #0d3d6e;
+}
+
+/* Container de todos os cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card individual */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 12rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(16, 78, 139, 0.12);
+  border: 1px solid #dce8f5;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(16, 78, 139, 0.2);
+}
+
+/* Faixa superior azul */
+.imagem-card {
+  background: #104e8b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 16px;
+}
+
+.imagem-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #e8f0fb;
+  object-fit: cover;
+}
+
+/* Nome */
+.nome-card h3 {
+  color: #0d3d6e;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Cargo */
+.cargo-card {
+  padding: 14px 16px 4px;
+  text-align: center;
+}
+
+.cargo-card h3 {
+  color: #104e8b;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0;
+}
+
+/* Matrícula */
+.matricula-card {
+  padding: 8px 16px 20px;
+  text-align: center;
+}
+
+.matricula-card p {
+  color: #7a94b0;
+  font-size: 0.78rem;
+  font-family: monospace;
+  background: #f0f6ff;
+  border: 1px solid #dce8f5;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+

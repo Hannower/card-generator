@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic. com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <h1>
+        <i class="fa-solid fa-id-badge"></i>
+        Card Generator
+      </h1>
+    </header>
+
+    <main>
+      <section class="formulario">
+
+        <div class="titulo">
+
+          <div><h3>Informações do Card</h3></div>
+
+          <div><p>Preencha os dados abaixo para gerar o seu Card profissional</p></div>
+
+        </div>
+
+        <div class="container-form">
+          <form>
+            <div class="nome-cargo">
+
+                <div class="form-nome">
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" id="nome" placeholder="Ex: João Silva">
+                </div>
+
+                <div class="form-cargo">
+                  <label for="cargo">Cargo</label>
+                  <input type="text" id="cargo" placeholder="Ex: Gerente de vendas">
+                </div>
+                
+                
+              </div>
+
+              <div class="botao">
+                <button>CRIAR CARD</button>
+              </div>
+
+            </form>
+
+  
+        </div>
+
+      </section>
+
+      <section class="cracha">
+        <div class="cards">
+
+          <div class="card">
+
+            <div class="imagem-card">
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=avataaars">
+            </div>
+
+            <div class="cargo-card">
+              <h3>Vendedor</h3>
+            </div>
+
+            <div class="matricula-card">
+              <p>Matricula</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+
+    <footer>
+      <p>Badge Generator &copy; 2025</p>
+    </footer>
+
+</body>
+<script src="./js/app.js"></script> 
+</html>
