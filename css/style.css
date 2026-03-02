@@ -168,9 +168,18 @@ header {
   text-align: center;
 }
 
-.cargo-card h3 {
+.nome-card h3 {
   color: #104e8b;
   font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 1rem;    
+}
+
+.cargo-card h3 {
+  color: #104e8b;
+  font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;

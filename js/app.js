@@ -12,7 +12,7 @@ botao.addEventListener('click', function(event) {
     const divCard = document.createElement('div');
     divCard.classList.add('card');
     cards.appendChild(divCard);
-
+    
     const divImg = document.createElement('div');
     divImg.classList.add('imagem-card');
     divCard.appendChild(divImg);
@@ -20,6 +20,14 @@ botao.addEventListener('click', function(event) {
     const img = document.createElement('img');
     img.src = 'https://api.dicebear.com/7.x/avataaars/svg?seed=avataaars';
     divImg.appendChild(img);
+
+    const divNome = document.createElement('div');
+    divNome.classList.add('nome-card');
+    divCard.appendChild(divNome);
+
+    const nome = document.createElement('h3');
+    nome.textContent = inputNome.value;
+    divNome.appendChild(nome);
 
     const divCargo = document.createElement('div');
     divCargo.classList.add('cargo-card');
@@ -36,6 +44,4 @@ botao.addEventListener('click', function(event) {
     const numMatricula = document.createElement('p');
     numMatricula.textContent = `#${String(matricula++).padStart(4, '0')}`;
     divMatricula.appendChild(numMatricula);
-
-
 })
