@@ -108,6 +108,11 @@ header {
 }
 
 /* Container de todos os cards */
+
+.secao-card {
+    margin-bottom: 5rem;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +126,7 @@ header {
   background: #ffffff;
   border-radius: 16px;
   width: 12rem;
-  height: 16rem;
+  height: 16rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,9 +208,26 @@ header {
   margin: 0;
 }
 
+.btn-excluir {
+    margin-bottom: 0.5rem;
+    border: none;
+    background-color: #0d3d6e;
+    color: #ffffff;
+    padding: 0.5rem;
+    font-size:0.5rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.btn-excluir:hover {
+    background-color: #104e8b;
+    cursor: pointer;
+}
+
 footer {
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     font-size: 0.8rem;
     color: #808080;
 }

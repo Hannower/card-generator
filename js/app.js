@@ -2,10 +2,18 @@
 const inputNome = document.querySelector('#nome');
 const inputCargo = document.querySelector('#cargo');
 const botao = document.querySelector('.botao');
-let matricula = 1;
+const sexo = document.querySelector('.sexo');
+let matricula = 1021;
 
 botao.addEventListener('click', function(event) {
     event.preventDefault();
+
+    const sexoMarcado = document.querySelector('input[name="genero"]:checked');    
+
+    if (inputNome.value === '' || inputCargo.value === '' || !sexoMarcado) {
+        alert('Preencha todas as informações antes de criar o card!');
+        return;
+    }
 
     const cards = document.querySelector('.cards');
 
@@ -18,7 +26,15 @@ botao.addEventListener('click', function(event) {
     divCard.appendChild(divImg);
 
     const img = document.createElement('img');
-    img.src = 'https://api.dicebear.com/7.x/avataaars/svg?seed=avataaars';
+
+    if (sexo.value === 'masculino') {
+        img.src = 'https://api.dicebear.com/9.x/adventurer/svg?seed=' + matricula + '=male';
+    } 
+    
+    if (sexo.value === 'feminino') {
+        img.src = 'https://api.dicebear.com/9.x/adventurer/svg?seed=' + matricula + '=female';
+    } 
+
     divImg.appendChild(img);
 
     const divNome = document.createElement('div');
@@ -44,4 +60,17 @@ botao.addEventListener('click', function(event) {
     const numMatricula = document.createElement('p');
     numMatricula.textContent = `#${String(matricula++).padStart(4, '0')}`;
     divMatricula.appendChild(numMatricula);
+
+    const botaoExcluir = document.createElement('button');
+    botaoExcluir.classList.add('btn-excluir');
+    botaoExcluir.textContent = 'EXCLUIR';
+    divCard.appendChild(botaoExcluir);
+
+    inputNome.value = '';
+    inputCargo.value = '';
+
+    botaoExcluir.addEventListener('click', function() {
+    divCard.remove();
+    })
 })
+
