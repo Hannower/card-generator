@@ -232,6 +232,120 @@ footer {
     color: #808080;
 }
 
+/* ===================== */
+/* RESPONSIVIDADE        */
+/* ===================== */
+
+/* Tablet — até 768px */
+@media (max-width: 768px) {
+    header {
+        font-size: 0.85rem;
+        padding: 1.2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .formulario {
+        width: 95%;
+        border-radius: 16px;
+    }
+
+    .container-form {
+        padding: 1rem 1.5rem 0;
+    }
+
+    .botao button {
+        max-width: 100%;
+    }
+
+    .cards {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .card {
+        width: 150px;
+    }
+}
+
+/* Mobile — até 480px */
+@media (max-width: 480px) {
+    header {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .formulario {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    .titulo {
+        padding: 1.2rem 1rem 0.3rem;
+    }
+
+    .titulo h3 {
+        font-size: 1rem;
+    }
+
+    .titulo p {
+        font-size: 0.8rem;
+    }
+
+    .container-form {
+        padding: 0.8rem 1.2rem 0;
+    }
+
+    .nome-cargo input[type="text"] {
+        font-size: 0.85rem;
+        padding: 0.55rem 0.9rem;
+    }
+
+    .form-sexo {
+        gap: 1rem;
+    }
+
+    .botao {
+        padding-bottom: 1.2rem;
+    }
+
+    .botao button {
+        font-size: 0.8rem;
+        padding: 0.7rem;
+    }
+
+    /* Cards em 2 colunas no mobile */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 170px;
+    }
+
+    .imagem-card img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile muito pequeno — até 320px */
+@media (max-width: 320px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
 
 
 
