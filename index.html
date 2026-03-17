@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Generator</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic. com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
 
-    <header>
-      <h1>
-        <i class="fa-solid fa-id-badge"></i>
-        Card Generator
-      </h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Generator</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic. com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-    <main>
-      <section class="formulario">
+<body>
 
-        <div class="titulo">
+  <header>
+    <h1>
+      <i class="fa-solid fa-id-badge"></i>
+      Card Generator
+    </h1>
+  </header>
 
-          <div><h3>Informações do Card</h3></div>
+  <main>
+    <section class="formulario">
 
-          <div><p>Preencha os dados abaixo para gerar o seu Card profissional</p></div>
+      <div class="titulo">
 
+        <div>
+          <h3>Informações do Card</h3>
         </div>
 
-        <div class="container-form">
-          <form>
-            <div class="nome-cargo">
-
-                <div class="form-nome">
-                  <label for="nome">Nome Completo</label>
-                  <input type="text" id="nome" placeholder="Ex: João Silva">
-                </div>
-
-                <div class="form-cargo">
-                  <label for="cargo">Cargo</label>
-                  <input type="text" id="cargo" placeholder="Ex: Gerente de vendas">
-                </div>
-
-                <p>Sexo</p>
-
-                <div class="form-sexo">
-                  <label>
-                    <input class="sexo" type="radio" name="genero" value="masculino">Masculino
-                  </label>
-                  <label>
-                    <input class="sexo" type="radio" name="genero" value="feminino">Feminino
-                  </label>
-
-                </div>
-                
-                
-              </div>
-
-              <div class="botao">
-                <button>CRIAR CARD</button>
-              </div>
-
-            </form>
-
-  
+        <div>
+          <p>Preencha os dados abaixo para gerar o seu Card profissional</p>
         </div>
 
-      </section>
+      </div>
 
-      <section class="secao-card">
-        <div class="cards"></div>
+      <div class="container-form">
+        <form>
+          <div class="nome-cargo">
 
-      </section>
-    </main>
+            <div class="form-nome">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" placeholder="Ex: João Silva">
+            </div>
 
-    <footer>
-      <p>Card Generator &copy; 2026</p>
-    </footer>
+            <div class="form-cargo">
+              <label for="cargo">Cargo</label>
+              <input type="text" id="cargo" placeholder="Ex: Gerente de vendas">
+            </div>
+
+            <p>Sexo</p>
+
+            <div class="form-sexo">
+              <label>
+                <input class="sexo" type="radio" name="genero" value="male">Masculino
+              </label>
+              <label>
+                <input class="sexo" type="radio" name="genero" value="female">Feminino
+              </label>
+
+            </div>
+
+
+          </div>
+
+          <div class="botao">
+            <button>CRIAR CARD</button>
+          </div>
+
+        </form>
+
+
+      </div>
+
+    </section>
+
+    <section class="secao-card">
+      <div class="cards"></div>
+
+    </section>
+
+
+  </main>
+
+  <dialog id="modal-edicao">
+
+    <form id="form-edicao">
+
+      <label for="nome-edicao">Nome Completo</label>
+      <input type="text" id="nome-edicao">
+
+      <label for="cargo-edicao">Cargo</label>
+      <input type="text" id="cargo-edicao">
+
+      <label>
+        <input class="sexo-edicao" type="radio" name="genero-edicao" value="male">Masculino
+      </label>
+      <label>
+        <input class="sexo-edicao" type="radio" name="genero-edicao" value="female">Feminino
+      </label>
+
+      <div class="botoes-modal">
+        <button type="submit">SALVAR</button>
+        <button type="button" id="btn-cancelar">CANCELAR</button>
+      </div>
+
+    </form>
+
+  </dialog>
+
+  <footer>
+    <p>Card Generator &copy; 2026</p>
+  </footer>
 
 </body>
-<script src="./js/app.js"></script> 
+<script src="./js/app.js"></script>
+
 </html>

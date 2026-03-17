@@ -249,7 +249,21 @@ header {
     padding: 3px 12px;
 }
 
-.btn-excluir {
+.btn-excluir  {
+    margin-bottom: 12px;
+    border: none;
+    background-color: #e8f0fb;
+    color: #104e8b;
+    padding: 0.4rem 1rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-editar {
     margin-bottom: 12px;
     border: none;
     background-color: #e8f0fb;
@@ -264,6 +278,11 @@ header {
 }
 
 .btn-excluir:hover {
+    background-color: #f00b0ba9;
+    color: #ffffff;
+}
+
+.btn-editar:hover {
     background-color: #104e8b;
     color: #ffffff;
 }
@@ -275,6 +294,86 @@ footer {
     font-size: 0.8rem;
     color: #aaa;
     border-top: 1px solid #e0eaf5;
+}
+
+/* MODAL */
+#modal-edicao {
+    border: none;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 28rem;
+    box-shadow: 0 8px 32px rgba(16, 78, 139, 0.2);
+    margin: auto;
+}
+
+#modal-edicao::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#form-edicao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#form-edicao label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#form-edicao input[type="text"] {
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #c0d6ed;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#form-edicao input[type="text"]:focus {
+    border-color: #104e8b;
+}
+
+#form-edicao input[type="radio"] {
+    accent-color: #104e8b;
+}
+
+.botoes-modal {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.botoes-modal button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-salvar {
+    background-color: #104e8b;
+    color: #ffffff;
+}
+
+#btn-salvar:hover {
+    background-color: #0d3d6e;
+}
+
+#btn-cancelar {
+    background-color: #e8f0fb;
+    color: #104e8b;
+}
+
+#btn-cancelar:hover {
+    background-color: #c0d6ed;
 }
 
 /* ===================== */
